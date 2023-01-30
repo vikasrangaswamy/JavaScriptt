@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.appContainer{
+    background-color: rgb(7, 7, 7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+    padding: 25%;
+}
+.appContainer button{
+    font-size: 50px;
+    padding: 0% 3%;
+    margin: 0 7%;
+    border-radius: 10px;
+}
+
+.appContainer button:hover{
+    box-shadow: 0 0 10px white;
+
+}

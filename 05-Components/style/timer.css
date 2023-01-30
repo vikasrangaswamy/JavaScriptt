@@ -1,0 +1,25 @@
+.timerContainer{
+    background-color: black;
+    height:100%;
+    padding: 30%;
+    color: aliceblue;
+    text-align: center;
+    zoom: 140%;
+}
+
+.timerContainer h1{
+    margin: 3%;
+}
+
+.timerContainer p{
+    font-size: 150%;
+}
+
+.timerContainer button{
+    width: 10%;
+    margin: 3%;
+}
+
+.timerContainer button:hover{
+    box-shadow: 0 0 10px white;
+}
