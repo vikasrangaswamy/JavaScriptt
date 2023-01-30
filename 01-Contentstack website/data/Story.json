@@ -1,0 +1,12 @@
+[
+    {
+        "header": "Hackathon",
+        "intro": "Techsurf is a hackathon organized by Contentstack and hosted on Unstop. In this hackathon, we had the following 4 phases: Quiz, Video Pitch, Prototype Submission and Results. In the second phase, we had to propose a solution to one of the two given problems. Based on the proposed solution and prototype, the results were announced. One line experience about the competition: Vishvam - My experience with Contentstack till now can be described using 3 words : welcoming, fun and purpose-driven Soumik - This Hackathon was a challenging and exciting one, every phase and execution gave me a different thrill to win. Faraaz - A competitive and exciting building experience. Vaibhav - An incredibly rewarding experience that allowed me to develop a valuable solution in a short amount of time.",
+        "storyImage": "assets/images/techsurf-2022.png"
+    },
+    {
+        "header": "On-Campus",
+        "intro": "Contentstack also recruits young talent by organizing On-Campus drives. The recruitment process started by briefing all the candidates about the organization and further process. The process was divided into four stages namely Aptitude Round, Technical Round, Managerial Round and HR Round. Interviews were more like an elaborate discussion about how to solve the given problem and optimizing the given solution and finding whether we are eager to learn new things. Candidates who cleared all the three rounds were called for the HR Round which was to know more about us and our background.",
+        "storyImage": "assets/on-campus.png"
+    }
+]

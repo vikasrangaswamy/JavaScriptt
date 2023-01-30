@@ -1,0 +1,35 @@
+{
+    "logo":"assets/logo_wo_bg.png",
+    "address":"123-456-7890 123 Anywhere St., Any City, ST 12345",
+    "sitemap":[
+        {
+            "title":"About",
+            "href":"#about_start"
+        },
+        {
+            "title":"Story",
+            "href":"#story_start"
+        },
+        {
+            "title":"Team",
+            "href":"#team_start"
+        }
+    ],
+    "contactUs":{
+        "email":"dummy.mail@contenstackerns.com",
+        "socialMediaIcons":[
+            {
+                "icon":"fa-2xl fa-brands fa-linkedin-in",
+                "href":""
+            },
+            {
+                "icon":"fa-2xl fa-brands fa-github",
+                "href":""
+            },
+            {
+                "icon":"fa-2xl fa-brands fa-twitter",
+                "href":""
+            }
+        ]
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "logo": "assets/logo_wo_bg.png",
+    "navBar": [
+        {
+            "title": "About",
+            "href": "#about_start"
+        },
+        {
+            "title": "Story",
+            "href": "#story_start"
+        },
+        {
+            "title": "Team",
+            "href": "#team_start"
+        }
+    ]
+}

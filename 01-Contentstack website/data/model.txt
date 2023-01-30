@@ -1,0 +1,29 @@
+Header ( reused on multiple pages. Create it one time )
+    - Logo (file/assest images, pdf, videos. Reference )
+    - Nav Bar (resusable: May exist on multiple pages)
+
+Banner ( create a single banner or multiple banner in case of carousel)
+    - Banner heading
+    - Banner Image (file/asset)
+
+Story (Mutiple stories) eg campus , hackathon, lateral hiring 
+    - Header 
+    - Introduction
+    - Story Image (file/asset)
+
+Card (Multiple cards, reusable components)
+    - Image (file/asset)
+    - Heading 
+    - Paragraph
+    - Link 
+
+Footer ( reused on multiple pages. Create it one time )
+    - Logo (file/asset. Reference ) 
+    - Address (Multiple incase of more than one locations)
+    - Sitemap 
+    - Contact Us
+        - Email ( multiple in case there are more contacts. In our case single )
+        - Social Media Icon (multiple icons )
+
+xx not use term React component 
+
