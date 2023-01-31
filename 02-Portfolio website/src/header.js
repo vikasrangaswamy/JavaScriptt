@@ -1,3 +1,4 @@
+import {HeaderData,AboutData,ContactData,FooterData,GalleryData} from "../data/data.js"
 class Header{
 
     render(){
@@ -54,18 +55,18 @@ class Header{
 
 
         //Adding text 
-        homeButton.innerHTML=("HOME")
-        aboutButton.innerHTML=("ABOUT")
-        galleryButton.innerHTML=("GALLERY")
-        contactButton.innerHTML=("CONTACT")
+        homeButton.innerHTML=HeaderData.navBar[0].title
+        aboutButton.innerHTML=HeaderData.navBar[1].title
+        galleryButton.innerHTML=HeaderData.navBar[2].title
+        contactButton.innerHTML=HeaderData.navBar[3].title
 
-        scrollingText1.innerHTML=("Vikas Rangaswamy - ")
-        scrollingText2.innerHTML=("Vikas Rangaswamy - ")
-        scrollingText3.innerHTML=("Vikas Rangaswamy - ")
-        scrollingText4.innerHTML=("Vikas Rangaswamy - ")
-        scrollingText5.innerHTML=("Vikas Rangaswamy - ")
-        scrollingText6.innerHTML=("Vikas Rangaswamy - ")
-        scrollingText7.innerHTML=("Vikas Rangaswamy - ")
+        scrollingText1.innerHTML=AboutData.bannerHeading
+        scrollingText2.innerHTML=AboutData.bannerHeading
+        scrollingText3.innerHTML=AboutData.bannerHeading
+        scrollingText4.innerHTML=AboutData.bannerHeading
+        scrollingText5.innerHTML=AboutData.bannerHeading
+        scrollingText6.innerHTML=AboutData.bannerHeading
+        scrollingText7.innerHTML=AboutData.bannerHeading
 
 
         return frontPage

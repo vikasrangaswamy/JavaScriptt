@@ -1,3 +1,4 @@
+import {HeaderData,AboutData,ContactData,FooterData,GalleryData} from "../data/data.js"
 class Footer{
 
     render(){
@@ -12,9 +13,9 @@ class Footer{
         //creating classes
         socilaLinks.classList.add("social-links")
         //inner texts
-        facebookLink.innerHTML="facebook"
-        twitterLink.innerHTML="twitter"
-        instagramLink.innerHTML="instagram"
+        facebookLink.innerHTML=FooterData.footerIcons[0].name
+        twitterLink.innerHTML=FooterData.footerIcons[1].name
+        instagramLink.innerHTML=FooterData.footerIcons[2].name
 
         //appending elements
         footer.appendChild(socilaLinks)

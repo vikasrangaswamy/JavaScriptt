@@ -1,3 +1,4 @@
+import {HeaderData,AboutData,ContactData,FooterData,GalleryData} from "../data/data.js"
 import { About } from "./about.js"
 
 class GALLERY{

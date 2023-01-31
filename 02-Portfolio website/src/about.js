@@ -1,3 +1,5 @@
+import {HeaderData,AboutData,ContactData,FooterData,GalleryData} from "../data/data.js"
+
 class About{
 
 
@@ -78,12 +80,12 @@ class About{
         academicHtml.appendChild(boxAcademic)
 
         //Adding text
-        aboutHeading.innerHTML="ABOUT"
-        aboutContent.innerHTML="I am an Associate Software Engineer Intern at Contentstack persuing my B.E degree at JSS Science and Technology University, Mysore. I am passoniate about sports, travel and adventures.I am particularly fond of Hockey and Cricket and spend most of my free time playing or watching these sports.My technical skills and passion for sports make me an asset to any team,and I am sure to be a valuable addition to an organization."
+        aboutHeading.innerHTML=AboutData.aboutHeading
+        aboutContent.innerHTML=AboutData.aboutText
 
 
         //Adding text
-        galleryHeading.innerHTML="GALLERY"
+        galleryHeading.innerHTML=GalleryData.galelryHeading
 
         return about
     }
