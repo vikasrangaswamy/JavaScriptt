@@ -1,4 +1,4 @@
-
+//Website Data
 
 
 const HeaderData={
@@ -52,23 +52,7 @@ const ContactData={
 
 
 }
-const FooterData={
-    "footerIcons":[
-        {
-            "name":"Instagram",
-            "href":""
-        },
-        {
-            "name":"twitter",
-            "href":""
-        },
-        {
-            "name":"facebook",
-            "href":""
-        }
-        ],
 
-}
 const GalleryData={
     "galleryData":[
         {
@@ -100,4 +84,22 @@ const GalleryData={
         "galelryHeading":"GALLERY",
 
 }
+const FooterData={
+    "footerIcons":[
+        {
+            "name":"Instagram",
+            "href":""
+        },
+        {
+            "name":"twitter",
+            "href":""
+        },
+        {
+            "name":"facebook",
+            "href":""
+        }
+    ],
+
+}
+
 export {HeaderData,AboutData,ContactData,FooterData,GalleryData}

@@ -1,5 +1,5 @@
 import {HeaderData,AboutData,ContactData,FooterData,GalleryData} from "../data/data.js"
-import { About } from "./about.js"
+// import { About } from "./about.js"
 
 class GALLERY{
 
@@ -25,9 +25,9 @@ class GALLERY{
         const boxAcademic=document.createElement("div")
 
         //appending child
-        About.render.about.appendChild(galleryHeading)
-        About.render.about.appendChild(flexContainer1)
-        About.render.about.appendChild(flexContainer2)
+        // About.render.about.appendChild(galleryHeading)
+        // About.render.about.appendChild(flexContainer1)
+        // About.render.about.appendChild(flexContainer2)
         flexContainer1.appendChild(adventureHtml)
         adventureHtml.appendChild(boxAdventure)
         flexContainer1.appendChild(friendsHtml)
