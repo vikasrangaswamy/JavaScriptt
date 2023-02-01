@@ -12,6 +12,7 @@ class Footer{
 
         //creating classes
         socilaLinks.classList.add("social-links")
+        
         //inner texts
         facebookLink.innerHTML=FooterData.footerIcons[0].name
         twitterLink.innerHTML=FooterData.footerIcons[1].name
