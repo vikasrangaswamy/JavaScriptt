@@ -1,5 +1,11 @@
 import {HeaderData,AboutData,ContactData,FooterData,GalleryData} from "../data/data.js"
 
+fetch("https://raw.githubusercontent.com/vikasrangaswamy/JavaScriptt/master/02-Portfolio%20website/data/About.json")
+.then((response)=>{
+    return response.json()
+}).then((response)=>{
+    console.log("data" , response)
+})
 class About{
 
 
