@@ -1,16 +1,21 @@
 class Timer{
-    constructor(timer){
-        this.time=60
+    constructor(){
+        this.time=60;
         this.counter=0
     }
     
     updateTimer(){
-        this.timerValue.innerHTML=`${this.time} seconds`;
-        this.time=this.time-1;
-
-        if (this.time < 0){
-            this.time=zero;
-        }
+        setInterval(function(){
+            
+            this.time=this.time-1;
+            console.log("time" , this.time)
+    
+            if (this.time < 0){
+                this.time=0;
+            }
+        },1000)
+            
+        
     }
    
    
@@ -18,7 +23,7 @@ class Timer{
     render(){
     const timerContainer = document.createElement("div")
     const timerHeading = document.createElement("h1")
-    this.timerValue = document.createElement('p')
+    this.timerValue = document.createElement("p")
     const startButton = document.createElement("button")
     const resetButton = document.createElement("button")
     const stopButton=document.createElement("button")
@@ -37,14 +42,14 @@ class Timer{
 
      //Start button 
      startButton.innerHTML="start"
-     startButton.onclick=setInterval(this.counter = this.updateTimer.bind(this),1000)
+     startButton.onclick=this.updateTimer.bind(this)
  
      // stop button 
      stopButton.innerHTML="stop"
-     stopButton.onclick=clearInterval(this.counter)
+    //  stopButton.onclick=clearInterval(this.counter)
 
      resetButton.innerHTML="reset"
-     resetButton.onclick=clearInterval(this.counter)
+    //  resetButton.onclick=clearInterval(this.counter)
      
     return timerContainer
 
