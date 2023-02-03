@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
    "Text":"Let's Get to Know Eachother",
    "contactButtons":[
     {
@@ -14,5 +15,23 @@
         "href":""
     }
    ]
+=======
+    "contactText1":"Let's Get to Know Eachother",
+    "contactText2":"Eachother",
+    "contactButtons":[
+        {
+            "email":"vikas@gmail.com",
+            "href":""
+        },
+        {
+            "phone":"123456789",
+            "href":""
+        },
+        {
+            "contactForm":"Get In touch",
+            "href":""
+        }
+    ]
+>>>>>>> parent of 09eef16 (deteled duplicate folders)
 
 }
