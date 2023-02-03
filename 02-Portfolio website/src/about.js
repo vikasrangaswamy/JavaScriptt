@@ -1,15 +1,13 @@
-import {HeaderData,AboutData,ContactData,FooterData,GalleryData} from "../data/data.js"
+// import {HeaderData,AboutData,ContactData,FooterData,GalleryData} from "../data/data.js"
+const url1 = "https://raw.githubusercontent.com/vikasrangaswamy/JavaScriptt/master/02-Portfolio%20website/data/About.json" 
+const url2 = "https://raw.githubusercontent.com/vikasrangaswamy/JavaScriptt/master/02-Portfolio%20website/data/Gallery.json" 
 
-fetch("https://raw.githubusercontent.com/vikasrangaswamy/JavaScriptt/master/02-Portfolio%20website/data/About.json")
-.then((response)=>{
-    return response.json()
-}).then((response)=>{
-    console.log("data" , response)
-})
+
 class About{
 
 
     render(){
+        
         //Creating elements
         const about=document.createElement("div")
         const aboutHeading=document.createElement("h2")
@@ -86,12 +84,34 @@ class About{
         academicHtml.appendChild(boxAcademic)
 
         //Adding text
-        aboutHeading.innerHTML=AboutData.aboutHeading
-        aboutContent.innerHTML=AboutData.aboutText
+        fetch(url1)
+        .then((response)=>{
+            return response.json()
+        }).then((response)=>{
+            console.log("data" , response)
+            aboutHeading.innerHTML=response.aboutHeading
+            aboutContent.innerHTML=response.aboutText
+
+        })
+        .catch((reject) => {
+            console.log("reject", reject)
+        })
+        
 
 
         //Adding text
-        galleryHeading.innerHTML=GalleryData.galelryHeading
+        fetch(url2)
+        .then((response)=>{
+            return response.json()
+        }).then((response)=>{
+            console.log("data" , response)
+            galleryHeading.innerHTML=response.galelryHeading
+
+        })
+        .catch((reject) => {
+            console.log("reject", reject)
+        })
+        
 
         return about
     }

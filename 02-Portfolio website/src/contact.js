@@ -1,5 +1,6 @@
 
-import {HeaderData,AboutData,ContactData,FooterData,GalleryData} from "../data/data.js"
+// import {HeaderData,AboutData,ContactData,FooterData,GalleryData} from "../data/data.js"
+const contactDataUrl = "https://raw.githubusercontent.com/vikasrangaswamy/JavaScriptt/master/02-Portfolio%20website/data/Contact.json"
 class Contact{
 
 
@@ -26,14 +27,35 @@ class Contact{
         phoneButton.id="phone"
         GetInTouchButton.id="get-in-touch"
         
-        flexBoxTextP1.innerHTML=ContactData.contactText1
-        flexBoxTextP2.innerHTML=ContactData.contactText2
+        fetch(contactDataUrl)
+        .then((response)=>{
+            return response.json()
+        }).then((response)=>{
+            console.log("data" , response)
+            flexBoxTextP1.innerHTML=response.contactText1
+            flexBoxTextP2.innerHTML=response.contactText2
+
+        })
+        .catch((reject) => {
+            console.log("reject", reject)
+        })
+        
         
         //Adding data
-        mailButton.innerHTML=ContactData.contactButtons[0].email
-        phoneButton.innerHTML=ContactData.contactButtons[1].phone
-        GetInTouchButton.innerHTML=ContactData.contactButtons[2].contactForm
+        fetch(contactDataUrl)
+        .then((response)=>{
+            return response.json()
+        }).then((response)=>{
+            console.log("data" , response)
+            mailButton.innerHTML=response.contactButtons[0].email
+            phoneButton.innerHTML=response.contactButtons[1].phone
+            GetInTouchButton.innerHTML=response.contactButtons[2].contactForm
+        })
+        .catch((reject) => {
+            console.log("reject", reject)
+        })
 
+        
         //Appending the containers
         footer.appendChild(flexBox)
         flexBox.appendChild(flexBoxText)

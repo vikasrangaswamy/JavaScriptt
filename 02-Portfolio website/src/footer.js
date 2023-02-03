@@ -1,4 +1,5 @@
-import {HeaderData,AboutData,ContactData,FooterData,GalleryData} from "../data/data.js"
+// import {HeaderData,AboutData,ContactData,FooterData,GalleryData} from "../data/data.js"
+const footerDataUrl= "https://raw.githubusercontent.com/vikasrangaswamy/JavaScriptt/master/02-Portfolio%20website/data/Footer.json"
 class Footer{
 
     render(){
@@ -14,9 +15,20 @@ class Footer{
         socilaLinks.classList.add("social-links")
         
         //inner texts
-        facebookLink.innerHTML=FooterData.footerIcons[0].name
-        twitterLink.innerHTML=FooterData.footerIcons[1].name
-        instagramLink.innerHTML=FooterData.footerIcons[2].name
+        fetch(footerDataUrl)
+        .then((response)=>{
+            return response.json()
+        }).then((response)=>{
+            console.log("data" , response)
+            facebookLink.innerHTML=response.footerIcons[0].name
+            twitterLink.innerHTML=response.footerIcons[1].name
+            instagramLink.innerHTML=response.footerIcons[2]
+
+        })
+        .catch((reject) => {
+            console.log("reject", reject)
+        })
+        .name
 
         //appending elements
         footer.appendChild(socilaLinks)

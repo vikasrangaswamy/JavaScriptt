@@ -1,4 +1,6 @@
 import {HeaderData,AboutData,ContactData,FooterData,GalleryData} from "../data/data.js"
+const headerDataUrl ="https://raw.githubusercontent.com/vikasrangaswamy/JavaScriptt/master/02-Portfolio%20website/data/Header.json"
+const aboutDataUrl = "https://raw.githubusercontent.com/vikasrangaswamy/JavaScriptt/master/02-Portfolio%20website/data/About.json"
 class Header{
 
     render(){
@@ -55,18 +57,36 @@ class Header{
 
 
         //Adding text 
-        homeButton.innerHTML=HeaderData.navBar[0].title
-        aboutButton.innerHTML=HeaderData.navBar[1].title
-        galleryButton.innerHTML=HeaderData.navBar[2].title
-        contactButton.innerHTML=HeaderData.navBar[3].title
-
-        scrollingText1.innerHTML=AboutData.bannerHeading
-        scrollingText2.innerHTML=AboutData.bannerHeading
-        scrollingText3.innerHTML=AboutData.bannerHeading
-        scrollingText4.innerHTML=AboutData.bannerHeading
-        scrollingText5.innerHTML=AboutData.bannerHeading
-        scrollingText6.innerHTML=AboutData.bannerHeading
-        scrollingText7.innerHTML=AboutData.bannerHeading
+        fetch(headerDataUrl)
+        .then((response)=>{
+            return response.json()
+        }).then((response)=>{
+            console.log("data" , response)
+            homeButton.innerHTML=response.navBar[0].title
+            aboutButton.innerHTML=response.navBar[1].title
+            galleryButton.innerHTML=response.navBar[2].title
+            contactButton.innerHTML=response.navBar[3].title
+        })
+        .catch((reject) => {
+            console.log("reject", reject)
+        })
+       
+        fetch(aboutDataUrl)
+        .then((response)=>{
+            return response.json()
+        }).then((response)=>{
+            scrollingText1.innerHTML=response.bannerHeading
+            scrollingText2.innerHTML=response.bannerHeading
+            scrollingText3.innerHTML=response.bannerHeading
+            scrollingText4.innerHTML=response.bannerHeading
+            scrollingText5.innerHTML=response.bannerHeading
+            scrollingText6.innerHTML=response.bannerHeading
+            scrollingText7.innerHTML=response.bannerHeading
+        })
+        .catch((reject) => {
+            console.log("reject", reject)
+        })
+        
 
 
         return frontPage
