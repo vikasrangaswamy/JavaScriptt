@@ -25,10 +25,9 @@
     margin: 10px;
   }
   
-  #cart-container {
+  .cartContainer {
     float: right;
     margin-right: 20px;
     font-weight: bold;
     cursor: pointer;
   }
-  

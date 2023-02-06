@@ -1,4 +1,5 @@
 const cartContainer = document.createElement("button")
+cartContainer.classList.add("cartContainer")
 let cart = [];
 
 function addToCart(product) {
