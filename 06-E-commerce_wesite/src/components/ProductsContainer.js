@@ -31,10 +31,6 @@ class ProductsContainer{
         let addToCartButton = document.createElement("button");
         addToCartButton.textContent = "Add to Cart";
         addToCartButton.addEventListener("click", () => {
-            // itemCount += 1;
-            // updateItemCount();
-            // Add the product to the cart
-            // ...
             addToCart(product)
             console.log("pressed add to cart button " , product)
         });

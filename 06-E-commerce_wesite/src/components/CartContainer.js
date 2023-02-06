@@ -19,9 +19,11 @@ function updateCartCount() {
 
 cartContainer.addEventListener("click", () => {
   console.log("cart items = " , cart) 
+  
 });
 
-updateCartCount();
+
+
 
 
 export {cartContainer, addToCart}

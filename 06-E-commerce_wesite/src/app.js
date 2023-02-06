@@ -1,31 +1,25 @@
 import { ProductsContainer } from "./components/ProductsContainer.js"
 import { cartContainer } from "./components/CartContainer.js";
-// const products = [
-//     {
-//       id: 1,
-//       title: "Product 1",
-//       description: "description of product 1",
-//       price: "10",
-//       image: ""
-//     },
-//     {
-//       id: 2,
-//       title: "Product 2",
-//       description: "description of product 2",
-//       price: "20",
-//       image: ""
-//     },
-//   ];
-const productsUrl=""
-const products = fetch(productsUrl)
+
+let products =[];
+const productsUrl="https://raw.githubusercontent.com/vikasrangaswamy/JavaScriptt/master/00-Data/E-commerce_data/products.json"
+fetch(productsUrl).then((resoponse)=>{
+    return resoponse.json()
+}).then((data)=>{
+    // console.log("data" , data)
+    products=data
+    // console.log("products" , products)
+    const newProductContainer=new ProductsContainer(products)
+    newProductContainer.mount(root)
+})
 const app=()=>{
     const appHeading = document.createElement("h1")
     const root=document.getElementById("root")
     appHeading.innerText="Shopping"
     root.appendChild(appHeading)
     appHeading.appendChild(cartContainer)
-    const newProductContainer=new ProductsContainer(products)
-    newProductContainer.mount(root)
+    
+    
     
 }
 
