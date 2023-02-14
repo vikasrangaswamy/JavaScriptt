@@ -5,7 +5,7 @@ const app = express()
 
 app.use(express.json())
 app.use("/users",usersRouter)
-app.post("/users" , usersRouter)
+
 
 app.listen(3000, ()=>{
     console.log("server started")

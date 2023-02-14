@@ -10,7 +10,6 @@ const getUsers = (req , res)=>{
 
 }
 
-
 const getUserById= (req, res)=>{
     const id = req.params.id
     const user = Users.find((user)=> user.id ===id)
@@ -30,10 +29,28 @@ const getUserById= (req, res)=>{
 
 const createUser = (req , res) =>{
     res.send("Your message is received")
-    // const newUser=new User()
+    const user=new newUser(req.body)
     console.log(req.body)
-    const newUser=req.body
-    Users.push(newUser)
+    Users.push(user)
+}
+// const userModel = [
+//     id,
+//     name,
+//     profileImage,
+//     introduction,
+//     profileLink
+// ]
+
+const validateUser=(req, res, next)=>{
+    // const result = userModel.every(Object.keys(req.body))
+    // if(!result){
+    //     res.status(400).json({
+    //         message:"validation failed"
+    //     })
+    //     return
+    // }
+    // next()
+
 }
 
-module.exports={getUsers , getUserById , createUser}
+module.exports={getUsers , getUserById , createUser , validateUser}
