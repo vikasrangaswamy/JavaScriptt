@@ -1,0 +1,19 @@
+1. Working with database
+
+Create db or switch db = use 'dbname'
+list all db = show db
+show current db = db
+delete = db.dropDatabase()
+
+2. Working with collections : 
+
+show collections = show collections
+creating a collection = db.createCollection('<name>')
+drop a particular colection = db.<name>.drop()
+
+3.Working with Rows:
+
+show all the Rows = db.<collection name>.find()
+insert one row = db.<collection name>.insert([{'object':1},
+'object':2])
+delete a row = db.<collection name>.remove({object:value})
