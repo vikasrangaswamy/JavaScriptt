@@ -2,8 +2,8 @@ console.log("TypeScript")
 
 let age : number = 20
 
-let myFunction = (params: any)=>{
-    console.log("myFunction" , params)
+function myFunction(params: any): void {
+    console.log("myFunction", params)
 }
 
 // myFunction("hello")
